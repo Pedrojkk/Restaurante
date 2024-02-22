@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: "Poppins", sans-serif;
+background-image: url("../Images/background-mobile.avif");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: auto;
+transition: all 500ms linear;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed ;
+}
+.wrap-card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 2vh;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+h1,h2 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 10px 10px 10px rgb(rgb(0, 0, 0), green, blue);
+}
+@media (width >= 1024px){
+    body{
+        background-image: url(../Images/fundo-browser.jpg);
+    }
+    .wrap-card{
+        flex-direction: row;
+        gap: 2px;
+    }
+}
